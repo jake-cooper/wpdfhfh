@@ -5,7 +5,7 @@
     get_header();
     $col= 'col-md-12';
     if ( is_active_sidebar( 'sidebar' ) ) {
-        $col = 'col-md-8';
+        $col = 'col-md-9';
     }
 
     ?>
