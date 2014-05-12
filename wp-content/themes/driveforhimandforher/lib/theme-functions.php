@@ -268,6 +268,7 @@ if(!function_exists('zee_admin_logo')){
             body.login div#login h1 a {
                 background-image: url(<?php echo zee_option('zee_logo_login');?>);
                 padding-bottom: 10px;
+                width:100%;
             }
             </style>
 
