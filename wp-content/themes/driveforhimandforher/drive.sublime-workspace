@@ -1,0 +1,487 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ses",
+				"session_id"
+			],
+			[
+				"session_",
+				"session_start"
+			],
+			[
+				"echo",
+				"echo	echo \"…\""
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\nget_header();\n$col= 'col-md-12';\nif ( is_active_sidebar( 'sidebar' ) ) {\n    \n    $col = 'col-md-9';\n    $col2 = 'col-md-2';\n    $col10 = 'col-md-10';\n}\n?>\n\n<div class=\"row\">\n\n    <div id=\"content\" class=\"site-content <?php echo $col; ?>\" role=\"main\">\n    <div class=\"<?php echo $col2; ?>\"></div>\n        <?php /* The loop */ ?>\n        <?php if(have_posts()){ while ( have_posts() ) { the_post(); ?>\n        <?php get_template_part( 'post-templates/content', get_post_format() ); ?>\n        <?php zee_post_nav(); ?>\n        <?php blog_comments(); ?>\n        <?php } } ?>\n    </div><!--/#content -->\n    <?php get_sidebar(); ?>\n</div>\n<?php get_footer();",
+			"file": "single.php",
+			"file_size": 558,
+			"file_write_time": 1399901600000000,
+			"settings":
+			{
+				"buffer_size": 660,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<div class=\"blog-item\">\n                    <div class=\"row\">\n                        <div class=\"col-lg-2 col-sm-2\">\n                            <li class=\"date\"><?php echo __('Posted On', ZEETEXTDOMAIN ); ?> <time class=\"entry-date\" datetime=\"<?php the_time( 'c' ); ?>\"><?php the_time('j M Y'); ?></time></li>\n                           <div class=\"date-wrap\">\n                                <span class=\"date magenta-bg\"><time class=\"entry-date\" datetime=\"<?php the_time( 'c' ); ?>\"><?php the_time('j'); ?></time></span>\n                                <span class=\"month\"><time class=\"entry-date\" datetime=\"<?php the_time( 'c' ); ?>\"><?php the_time('M'); ?></time></span>\n                            </div>\n                           <div class=\"comnt-wrap\">\n                                <span class=\"comnt-ico\">\n                                    <i class=\"icon-comments\"></i>\n                                </span>\n                                <span class=\"value\">0</span>\n                            </div> \n                        </div>\n                        <div class=\"col-lg-10 col-sm-10\">\n                            <div class=\"blog-img\">\n                                <img src=\"img/blog/img4M.jpg\" alt=\"MERCEDES BENZ S350 BLUETEC\">\n                            </div>\n\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-lg-2 col-sm-2 text-right\">\n                           <div class=\"author\">\n                                By <br><a href=\"#\" class=\"magenta\">Helen Carstens</a>\n                            </div>\n                            <ul class=\"list-unstyled\">\n                                <li><a href=\"javascript:;\"><em>travel</em></a></li>\n                                <li><a href=\"javascript:;\"><em>tour</em></a></li>\n                                <li><a href=\"javascript:;\"><em>recreation</em></a></li>\n                                <li><a href=\"javascript:;\"><em>tourism</em></a></li>\n                            </ul>\n                         <div class=\"share-view\">\n                                <ul class=\"list-unstyled\">\n                                    \n                                    <li><a href=\"javascript:;\">0 Share</a></li>\n\n                                </ul>\n                            </div>\n                        </div>\n                        <div class=\"col-lg-10 col-sm-10\">\n                            <h1>NEW REVIEW FOR HER: <a href=\"reviews_detail_4.php\" class=\"magenta\"> MERCEDES BENZ S350 BLUETEC – A DRIVE THAT IS OUT OF THIS WORLD</a></h1>\n                            <p>Where do you begin to describe a vehicle that has so much to offer that you couldn’t begin to put it into words?  This write up should simply say – Buy it!</p>\n                            <p>There are cars and then there are cars.  The S350 falls into the latter.  Merc have created a sublime, premium drive that once you get in, you do not want to get out.</p>\n                            <a href=\"reviews_detail_4.php\" class=\"btn btn-success magenta-bg\">Continue Reading</a>\n                        </div>\n                    </div>\n<!--blog item--></div>",
+			"settings":
+			{
+				"buffer_size": 3205,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "reviews.php",
+			"settings":
+			{
+				"buffer_size": 12992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "post-templates/content-review.php",
+			"settings":
+			{
+				"buffer_size": 1981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-review.php",
+			"settings":
+			{
+				"buffer_size": 2381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-news.php",
+			"settings":
+			{
+				"buffer_size": 2379,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "The key fingerprint is:\n5a:4b:84:71:d5:2e:6d:3b:ae:b6:e6:6c:5d:fc:81:2e jake.cooper.za@gmail.com\nThe key's randomart image is:\n+--[ RSA 2048]----+\n|      . ....     |\n|       +    .    |\n|      . .  o     |\n|       .  . +    |\n|        S  o o.  |\n|       + .  o.o. |\n|      . .  o.o ..|\n|         .+Eo.  .|\n|         ==o.    |\n+-----------------+\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 350,
+				"line_ending": "Unix",
+				"name": "The key fingerprint is:"
+			}
+		},
+		{
+			"contents": "badges: [\n			{\nid:integer name:string description:text link:string image_link:string earned:boolean earned_date:timestamp current_value:string needed_value:string level:string",
+			"settings":
+			{
+				"buffer_size": 175,
+				"line_ending": "Unix",
+				"name": "badges: ["
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 387.0,
+		"selected_items":
+		[
+			[
+				"se",
+				"Set Syntax: PHP"
+			],
+			[
+				"set",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/admin/Code/Address.Object.js",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/page-contact.php",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/sidebar.php",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/search.php",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/searchform.php",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/404.php",
+		"/Users/admin/Code/wordpress/wp-content/themes/driveforhimandforher/lib/theme-functions.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/start.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/ckeditor.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/login.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/index.php",
+		"/Users/admin/Code/www/libraries/ckeditor/README.md",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/bottom-menu.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/libraries/ckeditor/config.js",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/indexb.php",
+		"/Users/admin/Code/www/index.php",
+		"/Users/admin/Code/www/php-login-one-file-master/index.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/footer.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/header.inc.php",
+		"/Users/admin/Code/www/includes/header.inc.php",
+		"/Users/admin/Code/www/includes/mainlogin.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/front-header.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/front-footer.inc.php",
+		"/Users/admin/Code/DEV_STUFF/BEYOND/includes/front-center.inc.php",
+		"/Users/admin/Code/www/php-login-one-file-master/_installation/_install.php",
+		"/Users/admin/Code/www/includes/login.inc.php",
+		"/Users/admin/Code/www/includes/.htaccess",
+		"/Users/admin/Code/www/includes/login_successful.inc.php",
+		"/Users/admin/Code/www/includes/pdo.inc.php",
+		"/Users/admin/Code/www/includes/PDO_X_.inc.php",
+		"/Users/admin/Code/www/includes/logout.inc.php",
+		"/Users/admin/Code/www/includes/checklogin.inc.php",
+		"/Users/admin/Code/www/includes/extras/extractedFROM.php",
+		"/Users/admin/Code/www/includes/extras/extractedFROMuncertain.php",
+		"/Users/admin/Documents/^^__REFERENCE_LIBRARY/SNIPPETS/PHP MySQLi/bind to var.php",
+		"/Users/admin/Code/www/js/jQuery.angularstyle.inpt.js",
+		"/Users/admin/Code/www/indexB.php",
+		"/Users/admin/Code/www/includes/footer.inc.php",
+		"/Users/admin/Code/www/js/angular/textAngular/demo/textAngular.com.html",
+		"/Users/admin/Code/www/js/angular/textAngular/demo/static-demo.html",
+		"/Users/admin/Code/www/js/angular/textAngular/demo/demo.html",
+		"/Users/admin/Code/www/angular.php",
+		"/Users/admin/Code/www/includes/nav.inc.php",
+		"/Users/admin/Code/www/includes/config.inc.php",
+		"/Users/admin/Code/www/angulartest/../angular.php",
+		"/Users/admin/Code/www/includes/extras/carousel.inc.php",
+		"/Applications/MAMP/bin/mamp/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "single.php",
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 3205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								711
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 18.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "reviews.php",
+					"settings":
+					{
+						"buffer_size": 12992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "post-templates/content-review.php",
+					"settings":
+					{
+						"buffer_size": 1981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "page-review.php",
+					"settings":
+					{
+						"buffer_size": 2381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "page-news.php",
+					"settings":
+					{
+						"buffer_size": 2379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"auto_name": "The key fingerprint is:",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"auto_name": "badges: [",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true
+}

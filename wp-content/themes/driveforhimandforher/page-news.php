@@ -19,13 +19,27 @@
                             <div class="date-wrap">
                                 <span class="date magenta-bg"><time class="entry-date" datetime="<?php the_time( 'c' ); ?>"><?php the_time('j'); ?></time></span>
                                 <span class="month"><time class="entry-date" datetime="<?php the_time( 'c' ); ?>"><?php the_time('M'); ?></time></span>
+                                <ul>
+                                    <?php if ( comments_open() && ! is_single() ) { ?>
+                                        <li class="comments-link">
+                                            <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', ZEETEXTDOMAIN ) . '</span>', __( 'One comment so far', ZEETEXTDOMAIN ), __( 'View all % comments', ZEETEXTDOMAIN ) ); ?>
+                                        </li>
+                                    <?php } //.comment-link ?>  
+                                </ul>
                             </div>
                         </div>
                         <div class="col-sm-10">
-                            <div class="date-wrap">
-                                <span class="date magenta-bg"><time class="entry-date" datetime="<?php the_time( 'c' ); ?>"><?php the_time('j'); ?></time></span>
-                                <span class="month"><time class="entry-date" datetime="<?php the_time( 'c' ); ?>"><?php the_time('M'); ?></time></span>
-                            </div>
+                            <?php if ( is_single() ) { ?>
+                            <h1 class="entry-title"><?php the_title(); ?>
+                                <?php edit_post_link( __( 'Edit', ZEETEXTDOMAIN ), '<small class="edit-link pull-right">', '</small>' ); ?>
+                            </h1>
+                            <?php } else { ?>
+                            <h2 class="entry-title">
+                                <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+                                <?php edit_post_link( __( 'Edit', ZEETEXTDOMAIN ), '<small class="edit-link pull-right">', '</small>' ); ?>
+                            </h2>
+                            <?php } //.entry-title ?>
+
                         </div>
                         <div class="col-sm-2">
                             <div class="author">

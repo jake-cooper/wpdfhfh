@@ -1,0 +1,65 @@
+@import "../base/less/mixins";
+
+@button_color: #41a9d5;
+@text_color: #FFFFFF;
+
+@font_size: 1em;
+@rounding: 0.25em;
+@padding: 1em;
+
+.ow-button-base {
+	.clearfix();
+
+	a {
+		font-size: @font_size;
+		text-align: center;
+		padding: @padding @padding*2;
+		display: inline-block;
+		background: transparent;
+		border: 2px solid @button_color;
+
+		text-decoration: none;
+		color: @button_color;
+
+		.rounded(@rounding);
+
+		text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+
+		line-height: 1em;
+
+		span > img {
+			height: 1.4em;
+			width: auto;
+			margin: -0.15em 0.75em 0 -0.75em;
+			display: block;
+			float: left;
+		}
+
+		&.ow-button-hover:hover {
+			background: @button_color;
+			color: @text_color;
+		}
+	}
+
+
+
+	/* All the special styles */
+
+	&.ow-button-align-left {
+		text-align: left;
+	}
+
+	&.ow-button-align-right {
+		text-align: right;
+	}
+
+	&.ow-button-align-center {
+		text-align: center;
+	}
+
+	&.ow-button-align-justify {
+		a {
+			display: block;
+		}
+	}
+}
